@@ -13,7 +13,7 @@ public class Ex04 {
 
         long roundedPrice = (long) priceVND;
 
-        System.out.println("Giá chính xác (số thực): " + priceVND);
-        System.out.println("Giá làm tròn để thanh toán (long): " + roundedPrice);
+        System.out.printf("Giá chính xác (số thực): %.2f\n", priceVND);
+        System.out.printf("Giá làm tròn để thanh toán (long): %d", roundedPrice);
     }
 }
