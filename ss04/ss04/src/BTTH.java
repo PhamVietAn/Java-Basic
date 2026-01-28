@@ -1,4 +1,5 @@
 import java.time.Year;
+import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class BTTH {
@@ -41,12 +42,22 @@ public class BTTH {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        String bookID = "LIB-2024-S";
-        String isbn = "0123456789";
-        String rawTitle = "  cấu trúc   dỮ   liỆu  và   giẢi   thuẬt ";
-        String rawAuthor = "   nguyỄn   vĂn   a ";
-        String year = "2023";
+        System.out.print("Nhập mã sách (LIB-xxxx-S): ");
+        String bookID = sc.nextLine();
+
+        System.out.print("Nhập ISBN-10: ");
+        String isbn = sc.nextLine();
+
+        System.out.print("Nhập tên sách: ");
+        String rawTitle = sc.nextLine();
+
+        System.out.print("Nhập tác giả: ");
+        String rawAuthor = sc.nextLine();
+
+        System.out.print("Nhập năm xuất bản: ");
+        String year = sc.nextLine();
 
         if (!validBookID(bookID)) {
             System.out.println("Mã sách không hợp lệ!");
