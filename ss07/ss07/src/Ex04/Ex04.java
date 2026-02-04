@@ -18,7 +18,6 @@ public class Ex04 {
 
 class ClassRoom {
     static double classFund = 0;
-
     private String studentName;
 
     // Constructor
