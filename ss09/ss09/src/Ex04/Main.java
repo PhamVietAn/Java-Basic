@@ -9,7 +9,7 @@ public class Main {
         animal.sound();
 
         // Không gọi được phương thức riêng
-//        animal.wagTail(); // lỗi compile-time
+        // animal.wagTail(); // lỗi compile-time
 
         // Downcasting an toàn
         if (animal instanceof Dog) {
